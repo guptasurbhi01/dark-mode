@@ -78,7 +78,6 @@ input:checked + .slider:before {
 .image-container  {
     width: 60px;
     height: 34px;
-    /* transition: filter 0.3s ease-in-out; */
 }
 h1 {
     font-size: 5rem;
