@@ -13,28 +13,24 @@
             <label class="switch">
                 <input type="checkbox" id="toggleSwitch" onclick="toggleDarkMode()">
                 <span class="slider">
-                    <div class="image-container">
-            <i class="fa-solid fa-moon fa-flip-horizontal fa-xl"></i>
-            <i class="fa-solid fa-sun fa-xl" style="color: #FFD43B;"></i>
+                    <div class="image-container" id = "image-container">
+            <i class="fa-solid fa-moon fa-flip-horizontal fa-xl" style="margin-top: 16.5px;
+    margin-left: 30px;"></i>
         </div>
     </span>
             </label>
-            <!-- <div class="image-container">
-            <img src="37801493.jpg" alt="Light Mode Image" id="modeImage">
-        </div> -->
-            <!-- <span id="modeText">Dark Mode</span> -->
         </div>
+        <h1>Click on the Toggle Button</h1>
     </div>
     <script>
         function toggleDarkMode() {
   const container = document.getElementById("container");
   let element = document.body;
   const toggleSwitch = document.getElementById("toggleSwitch");
-  const modeText = document.getElementById("modeText");
-  const modeImage = document.getElementById("modeImage");
+  const modeImage = document.getElementById("image-container");
 
   element.classList.toggle("dark-mode");
-  modeImage.src = toggleSwitch.checked ? ".37801493.jpg" : "light-image.jpg";
+  modeImage.innerHTML = toggleSwitch.checked ? `<i id="light"class="fa-solid fa-sun fa-xl"></i>`:`<i id="dark"class="fa-solid fa-moon fa-flip-horizontal fa-xl"></i>` ;
 }
 
     </script>
