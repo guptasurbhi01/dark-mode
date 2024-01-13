@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Toggle</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Include the Font Awesome CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="toggleSwitch" onclick="toggleDarkMode()">
+                <span class="slider">
+                    <div class="image-container">
+            <i class="fa-solid fa-moon fa-flip-horizontal fa-xl"></i>
+            <i class="fa-solid fa-sun fa-xl" style="color: #FFD43B;"></i>
+        </div>
+    </span>
+            </label>
+            <!-- <div class="image-container">
+            <img src="37801493.jpg" alt="Light Mode Image" id="modeImage">
+        </div> -->
+            <!-- <span id="modeText">Dark Mode</span> -->
+        </div>
+    </div>
+    <script>
+        function toggleDarkMode() {
+  const container = document.getElementById("container");
+  let element = document.body;
+  const toggleSwitch = document.getElementById("toggleSwitch");
+  const modeText = document.getElementById("modeText");
+  const modeImage = document.getElementById("modeImage");
+
+  element.classList.toggle("dark-mode");
+  modeImage.src = toggleSwitch.checked ? ".37801493.jpg" : "light-image.jpg";
+}
+
+    </script>
+</body>
+</html>
