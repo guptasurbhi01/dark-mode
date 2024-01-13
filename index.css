@@ -5,7 +5,7 @@ body {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction:  column;
     align-items: center;
     margin-top: 65px;
     /* justify-content: center; */
@@ -76,13 +76,26 @@ input:checked + .slider:before {
 }
 
 .image-container  {
-    position: relative;
-    max-width: 100%;
-    border-radius: 10px;
-    transition: filter 0.3s ease-in-out;
+    width: 60px;
+    height: 34px;
+    /* transition: filter 0.3s ease-in-out; */
+}
+h1 {
+    font-size: 5rem;
+    margin: 100px auto;
+    text-align: center;
 }
 
 .dark-mode {
-    background-color: black;
+  background-color: black;
   color: white;
+}
+#light{
+    margin-top: 16.5px;
+    margin-left: 4.5px;
+    color: #FFD43B;
+}
+#dark{
+    margin-top: 16.5px;
+    margin-left: 30px;
 }
